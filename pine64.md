@@ -144,8 +144,7 @@ will mount as `/export/mnt/sdb2`. Make sure the `/export` directory mountpoint e
 ### Docker and Kubernetes
 
 You can install docker, etcd, flanned and kubernetes from rpm as well but some of these packages are too old, so
-don't install these from rpm.
-
+don't install these from rpm. We will manage these from ansible.
 
 
 ## References
