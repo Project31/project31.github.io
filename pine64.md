@@ -68,7 +68,84 @@ should reflect the full capacity of the card. Finally you should run
 yum update
 ~~~~
 
-to bring Centos-7 fully up to date.
+to bring Centos-7 distro fully up to date.
+
+## Optional configuration tips
+
+### NTP
+
+For most application it is crucial the time of your machine is set correctly so it makes sense to run
+the ntp service so you no longer have to worry about that.
+
+~~~~
+yum -y install ntp
+systemctl enable ntpd
+systemctl start ntpd
+~~~~
+
+### Swith out NetworkManager for the good old network service
+
+If you're going to use your Pine64 as a server platform then it makes sense to swap out the (too) dynamic NetworkManager
+for the good old network service. You're going to have to be a bit careful if you don't have a monitor hooked
+up like me that you don't loose the network while doing this.
+
+Bring up the network service
+
+~~~~
+echo "NETWORKING=yes" > /etc/sysconfig/network
+~~~~
+
+Edit the `/etc/sysconfig/network-scripts/ifcfg-eth0` file and set `NM_CONTROLLED=no`
+~~~~
+NAME=eth0
+DEVICE=eth0
+ONBOOT=yes
+BOOTPROTO=dhcp
+NM_CONTROLLED=no
+~~~~
+
+NetworkManager runs with a dhcp-help which you need to shutdown before you can startup the network service
+~~~~
+killall -9 nm-dhcp-helper
+systemctl enable network
+systemctl start network
+system disable NetworkManager
+system stop NetworkManager
+~~~~
+
+### Install `ifconfig`
+
+~~~~
+yum -y install net-tools
+~~~~
+
+### NFS
+
+If you want to mount an external NFS share you need to run autofs
+
+~~~~
+yum -y install autofs nfs-utils
+~~~~
+
+before you can reference your share in your `auto.myshare` file, for example
+
+~~~~
+sdb2         -rw,soft,intr,rsize=8192,wsize=8192   192.168.1.11:/mnt/sdb2
+~~~~
+
+referenced in the /etc/auto.master file as
+
+~~~~
+/export /etc/auto.myshare
+~~~~
+
+will mount as `/export/mnt/sdb2`. Make sure the `/export` directory mountpoint exists.
+
+### Docker and Kubernetes
+
+You can install docker, etcd, flanned and kubernetes from rpm as well but some of these packages are too old, so
+don't install these from rpm.
+
 
 
 ## References
