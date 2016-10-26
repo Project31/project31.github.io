@@ -129,6 +129,8 @@ If you want to mount an external NFS share you need to run autofs
 
 ~~~~
 yum -y install autofs nfs-utils
+systemctl enable autofs
+systemctl start autofs
 ~~~~
 
 before you can reference your share in your `auto.myshare` file, for example
