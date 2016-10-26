@@ -1,3 +1,8 @@
+---
+layout: page
+title: Pine64
+permalink: /pine64/
+---
 # Install Centos-7 to Pine64
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
