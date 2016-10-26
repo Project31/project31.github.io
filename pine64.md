@@ -3,9 +3,8 @@ layout: page
 title: Pine64
 permalink: /pine64/
 ---
-# Pine64 
 
-## Install Centos-7 to Pine64
+## Install Centos-7 to the Pine64
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately currently that kernel does
@@ -75,9 +74,9 @@ to bring Centos-7 fully up to date.
 
 
 ## References
-[MyPine] My Pine64 Unofficial PINE64 Site. <https://www.mypine64.com/>
+1. [MyPine] My Pine64 Unofficial PINE64 Site. <https://www.mypine64.com/>
 [Centos] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
-[Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
-[Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
-[StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
+2. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
+3. [Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
+4. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
 
