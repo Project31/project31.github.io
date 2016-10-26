@@ -11,6 +11,8 @@ images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately curr
 not run as is on the Pine64. However there are really great instructions by [Uli Middelberg](https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board) how to
 fix this. Alternative you can download a ready to go image from [mypine64.com](https://www.mypine64.com/forums/viewtopic.php?f=30&t=5).
 
+![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
+
 ## Flash the image
 You will need a 8 GB microSD card or bigger. On OSX stick the microSD card into an adapter and into your macbook. It will automount. Open the Disk Utility and check the Device setting, which should be of form `disk<n>s1`, so something like ‘disk2s1’ for n=2. Now unmount the disk and run
 
