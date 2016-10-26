@@ -8,13 +8,11 @@ permalink: /pine64/
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately currently that kernel does
-not run as is on the Pine64. However there are really great instructions by [Uli Middelberg]
-(https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board) how to
-fix this. Alternative you can download a ready to go image from [mypine64.com]
-(https://www.mypine64.com/forums/viewtopic.php?f=30&t=5).
+not run as is on the Pine64. However there are really great instructions by [Uli Middelberg(https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board) how to
+fix this. Alternative you can download a ready to go image from [mypine64.com](https://www.mypine64.com/forums/viewtopic.php?f=30&t=5).
 
 ## Flash the image
-You will need a 8 GB microSD card or bigger. On OSX stick the microSD card into an adapter and into your macbook. It will automount. Open the Disk Utility and check the Device setting, which should be of form disk<n>s1, so something like ‘disk2s1’ for n=2. Now unmount the disk and run
+You will need a 8 GB microSD card or bigger. On OSX stick the microSD card into an adapter and into your macbook. It will automount. Open the Disk Utility and check the Device setting, which should be of form `disk<n>s1`, so something like ‘disk2s1’ for n=2. Now unmount the disk and run
 
 ~~~~
 sudo dd bs=1m if=CentOS-aarch64-pine64.img of=/dev/rdisk2
@@ -37,7 +35,7 @@ Stick your microSD card in the board power it up. I had no luck getting an HDMI 
 nmap -p 22 — open -sV 192.168.1.0/24
 ~~~~
 
-Make sure to adjust the network setting you are expecting on your network. This command will give you a list of IP address that run SSH servers and you should be able to find IP address for your Pine64 board. Now you can ssh in using ssh root@<ipaddress> and use the default password of ‘centos’. Check that the /boot/uEnv.txt file contains the ethaddr setting you added, or add it now [Pine64–2].
+Make sure to adjust the network setting you are expecting on your network. This command will give you a list of IP address that run SSH servers and you should be able to find IP address for your Pine64 board. Now you can ssh in using ssh `root@<ipaddress>` and use the default password of ‘centos’. Check that the /boot/uEnv.txt file contains the ethaddr setting you added, or add it now [Pine64–2].
 
 The initial size of the microSD card is 8 GB. To use the full size of your microSD card [StackX] you need to use
 
@@ -75,8 +73,8 @@ to bring Centos-7 fully up to date.
 
 ## References
 1. [MyPine] My Pine64 Unofficial PINE64 Site. <https://www.mypine64.com/>
-[Centos] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
-2. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
-3. [Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
-4. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
+2. [UMidd] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
+3. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
+4. [Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
+5. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
 
