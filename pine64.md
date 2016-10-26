@@ -4,7 +4,7 @@ title: Pine64
 permalink: /pine64/
 ---
 
-## Install Centos-7 to the Pine64
+# 1. Install Centos-7 to the Pine64
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately currently that kernel does
@@ -13,7 +13,7 @@ fix this. Alternative you can download a ready to go image from [mypine64.com](h
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
 
-## Flash the image
+# 2. Flash the image
 You will need a 8 GB microSD card or bigger. On OSX stick the microSD card into an adapter and into your macbook. It will automount. Open the Disk Utility and check the Device setting, which should be of form `disk<n>s1`, so something like ‘disk2s1’ for n=2. Now unmount the disk and run
 
 ~~~~
@@ -29,7 +29,7 @@ ethaddr=00:06:dc:xx:xx:xx
 
 where the setting is the second number on the sticker on your pine board, if it says something like 0006dc8bce10 then use ‘ethaddr=00:06:dc:8b:ce:10’ [[Pine64–1]]. Note that 00:06:dc is the vendor id. Once done you can eject the card and insert into the Pine64 board. 
 
-# Boot up your Pine64
+# 3. Boot up your Pine64
 
 Stick your microSD card in the board power it up. I had no luck getting an HDMI monitor to work so I used the following command to see which new SSH server came online:
 
@@ -72,9 +72,9 @@ yum update
 
 to bring Centos-7 distro fully up to date.
 
-## Optional configuration tips
+# 4. Optional configuration tips
 
-### NTP
+## 4.1 NTP
 
 For most application it is crucial the time of your machine is set correctly so it makes sense to run
 the ntp service so you no longer have to worry about that.
@@ -85,7 +85,7 @@ systemctl enable ntpd
 systemctl start ntpd
 ~~~~
 
-### Switch out NetworkManager for the good old network service
+## 4.2 Switch out NetworkManager for the good old network service
 
 If you're going to use your Pine64 as a server platform then it makes sense to swap out the (too) dynamic NetworkManager
 for the good old `network` service. You're going to have to be a bit careful if you don't have a monitor hooked
@@ -115,13 +115,13 @@ system disable NetworkManager
 system stop NetworkManager
 ~~~~
 
-### ifconfig
+## 4.3 ifconfig
 
 ~~~~
 yum -y install net-tools
 ~~~~
 
-### NFS
+## 4.4 NFS
 
 If you want to mount an external NFS share you need to run autofs
 
@@ -143,13 +143,13 @@ referenced in the /etc/auto.master file as
 
 will mount as `/export/mnt/sdb2`. Make sure the `/export` directory mountpoint exists.
 
-### Docker and Kubernetes
+## 4.5 Docker and Kubernetes
 
 You can install docker, etcd, flanned and kubernetes from rpm as well but some of these packages are too old, so
 don't install these from rpm. We will manage these from ansible.
 
 
-## References
+# 5. References
 1. [MyPine] My Pine64 Unofficial PINE64 Site. <https://www.mypine64.com/>
 2. [UMidd] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
 3. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
