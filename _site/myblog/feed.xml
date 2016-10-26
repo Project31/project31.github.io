@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project31</title>
-    <description>Aarch/ARM64 Docker containers on Kubernetes. The aim is to run Fabric8 CI/CD on ARM64
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>/project31/</link>
-    <atom:link href="/project31/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 26 Oct 2016 11:26:48 -0400</pubDate>
-    <lastBuildDate>Wed, 26 Oct 2016 11:26:48 -0400</lastBuildDate>
+    <link>http://project31.github.io/</link>
+    <atom:link href="http://project31.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 26 Oct 2016 11:36:59 -0400</pubDate>
+    <lastBuildDate>Wed, 26 Oct 2016 11:36:59 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Wed, 26 Oct 2016 11:26:47 -0400</pubDate>
-        <link>/project31/jekyll/update/2016/10/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/project31/jekyll/update/2016/10/26/welcome-to-jekyll.html</guid>
+        <link>http://project31.github.io/jekyll/update/2016/10/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://project31.github.io/jekyll/update/2016/10/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
@@ -56,8 +56,8 @@
 
 </description>
         <pubDate>Wed, 26 Oct 2016 11:22:51 -0400</pubDate>
-        <link>/project31/myblog/jekyll/update/2016/10/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/project31/myblog/jekyll/update/2016/10/26/welcome-to-jekyll.html</guid>
+        <link>http://project31.github.io/myblog/jekyll/update/2016/10/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://project31.github.io/myblog/jekyll/update/2016/10/26/welcome-to-jekyll.html</guid>
         
         
         <category>myblog</category>
