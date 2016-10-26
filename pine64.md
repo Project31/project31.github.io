@@ -98,6 +98,7 @@ echo "NETWORKING=yes" > /etc/sysconfig/network
 ~~~~
 
 Edit the `/etc/sysconfig/network-scripts/ifcfg-eth0` file and set `NM_CONTROLLED=no`
+
 ~~~~
 NAME=eth0
 DEVICE=eth0
@@ -107,6 +108,7 @@ NM_CONTROLLED=no
 ~~~~
 
 NetworkManager runs with a dhcp-help which you need to shutdown before you can startup the network service
+
 ~~~~
 killall -9 nm-dhcp-helper
 systemctl enable network
