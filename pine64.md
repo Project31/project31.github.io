@@ -85,10 +85,10 @@ systemctl enable ntpd
 systemctl start ntpd
 ~~~~
 
-### Swith out NetworkManager for the good old network service
+### Switch out NetworkManager for the good old network service
 
 If you're going to use your Pine64 as a server platform then it makes sense to swap out the (too) dynamic NetworkManager
-for the good old network service. You're going to have to be a bit careful if you don't have a monitor hooked
+for the good old `network` service. You're going to have to be a bit careful if you don't have a monitor hooked
 up like me that you don't loose the network while doing this.
 
 Bring up the network service
