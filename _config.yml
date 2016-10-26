@@ -1,1 +1,14 @@
+title: Project31
+author: project31 team
+email: project-31@googlegroups.com
+description: > # this means to ignore newlines until "baseurl:"
+  Aarch/ARM64 Docker containers on Kubernetes. The aim is to run Fabric8 CI/CD on ARM64
+baseurl: "/minima"
+twitter_username: kurtstam
+
+# Build settings
+markdown: kramdown
 theme: minima
+exclude:
+  - Gemfile
+- Gemfile.lock
