@@ -113,7 +113,7 @@ system disable NetworkManager
 system stop NetworkManager
 ~~~~
 
-### Install `ifconfig`
+### ifconfig
 
 ~~~~
 yum -y install net-tools
