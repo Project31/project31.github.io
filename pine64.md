@@ -9,7 +9,7 @@ permalink: /pine64/
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately currently that kernel does
 not run as is on the Pine64. However there are really great instructions by [Uli Middelberg](https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board) how to
-fix this. Alternative you can download a ready to go image from [mypine64.com](https://www.mypine64.com/forums/viewtopic.php?f=30&t=5).
+on how to use a Pine64 ready kernel with the aarch64 centos distribution. Alternative you can download a ready to go image we have prepared from the releases section at <https://github.com/Project31/project31.github.io/releases>: 
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
 
@@ -154,9 +154,8 @@ don't install these from rpm. We will manage these from ansible.
 
 
 # 5. References
-1. [MyPine] My Pine64 Unofficial PINE64 Site. <https://www.mypine64.com/>
-2. [UMidd] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
-3. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
-4. [Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
-5. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
+1. [UMidd] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
+2. [Pine64–1] pine64 mac_address: <http://forum.pine64.org/showthread.php?tid=743&pid=6939#pid6939>
+3. [Pine64–2] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
+4. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
 
