@@ -34,7 +34,7 @@ where the setting is the second number on the sticker on your pine board, if it 
 Stick your microSD card in the board power it up. I had no luck getting an HDMI monitor to work so I used the following command to see which new SSH server came online:
 
 ~~~~
-nmap -p 22 — open -sV 192.168.1.0/24
+nmap -sV -p 22 -open 192.168.1.0/24
 ~~~~
 
 Make sure to adjust the network setting you are expecting on your network. This command will give you a list of IP address that run SSH servers and you should be able to find IP address for your Pine64 board. Now you can ssh in using ssh `root@<ipaddress>` and use the default password of ‘centos’. Check that the /boot/uEnv.txt file contains the ethaddr setting you added, or add it now [Pine64–2].
