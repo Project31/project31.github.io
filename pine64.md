@@ -9,7 +9,7 @@ permalink: /pine64/
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately currently that kernel does
 not run as is on the Pine64. However there are really great instructions by [Uli Middelberg](https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board)
-on how to use a Pine64 ready kernel with the aarch64 centos distribution. Alternative you can download a ready to go image we have prepared from the releases section at <https://github.com/Project31/project31.github.io/releases>: 
+on how to use a Pine64 ready kernel with the aarch64 centos distribution. Alternative you can download a ready to go image we have prepared from the releases section at <https://github.com/Project31/centos-pine64/releases>: 
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
 
