@@ -145,6 +145,5 @@ Look for the distros on the release page that have Docker and OpenShift. In thos
 
 # 5. References
 1. [UMidd] Install CentOS 7 on your favourite ARMv8 ARM64 AArch64 board, Uli Middelberg, <https://github.com/umiddelb/aarch64/wiki/Install-CentOS-7-on-your-favourite-ARMv8-ARM64-AArch64-board>
-2. [Pine64] pine64 subforum on ethernet port: <http://forum.pine64.org/showthread.php?tid=2049>
-3. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
+2. [StackX] Resize the root partition: <http://raspberrypi.stackexchange.com/questions/499/how-can-i-resize-my-root-partition>
 
