@@ -7,7 +7,7 @@ permalink: /pine64/
 # 1. Install Centos-7 to the Pine64
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
-images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately these release don't run on my Pine64 just yet. However, the Armbian guys have been doing great work and we started a [project](https://github.com/Project31/centos-pine64) (loosely based on work done by Uli Middelberg [UMidd]) that takes the Armbian UBoot and Kernel and inserts it into Centos 7.4 distribution. We have ready to go images for you to download from the releases section at <https://github.com/Project31/centos-pine64/releases>: 
+images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately these release don't run on my Pine64 just yet. However, the Armbian guys have been doing great work and we started a [project](https://github.com/Project31/centos-pine64) (loosely based on work done by Uli Middelberg [UMidd]) that takes the Armbian UBoot and Kernel and inserts it into a Centos 7.4 distribution. We have ready to go images for you to download from the releases section at <https://github.com/Project31/centos-pine64/releases>: 
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
 
@@ -29,7 +29,7 @@ Stick your microSD card in the board power it up. If you don't have an HDMI moni
 nmap -sV -p 22 -open 192.168.1.0/24
 ~~~~
 
-Make sure to adjust the network setting you are expecting on your network. This command will give you a list of IP address that run SSH servers and you should be able to find IP address for your Pine64 board. Now you can ssh in using ssh `root@<ipaddress>` and use the default password of ‘centos’. Check that the /boot/uEnv.txt file contains the ethaddr setting you added, or add it now [Pine64].
+Make sure to adjust the network setting you are expecting on your network. This command will give you a list of IP address that run SSH servers and you should be able to find IP address for your Pine64 board. Now you can ssh in using ssh `root@<ipaddress>` and use the default password of ‘centos’. Don't forget to run the `/root/finish-centos-install.sh` script which among other things will prompt you to change the root password.
 
 The initial size of the microSD card is 8 GB. To use the full size of your microSD card [StackX] you need to use
 
