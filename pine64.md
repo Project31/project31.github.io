@@ -15,7 +15,7 @@ images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately thes
 You will need a 8 GB microSD card or bigger. On OSX stick the microSD card into an adapter and into your macbook. It will automount. Open the Disk Utility and check the Device setting, which should be of form `disk<n>s1`, so something like ‘disk2s1’ for n=2. Now unmount the disk and run something like
 
 ~~~~
-sudo dd bs=1m if=centos47-armbian544-pine64.img of=/dev/rdisk2
+sudo dd bs=1m if=centos74-armbian544-pine64.img of=/dev/rdisk2
 ~~~~
 
 Warning: in ‘rdisk2’ the ‘r’ means raw disk and writes orders of magnitude faster on OSX and 2 is the value found above for n.
