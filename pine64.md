@@ -10,6 +10,7 @@ The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately these release don't run on my Pine64 just yet. However, the Armbian guys have been doing great work and we started a [project](https://github.com/Project31/centos-pine64) (loosely based on work done by Uli Middelberg [UMidd]) that takes the Armbian UBoot and Kernel and inserts it into a Centos 7.4 distribution. We have ready to go images for you to download
 
 | Board  | Distribution |
+| -------|--------------|
 | [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 and Armbian-5.44 with Docker and OpenShift for Pine64](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) |
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
