@@ -4,16 +4,18 @@ title: Pine64
 permalink: /pine64/
 ---
 
-# 1. Install Centos-7 to the Pine64
+# 1. Install Centos-7 into the Pine64, Rock64 and Rock64Pro
 
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately these release don't run on my Pine64 just yet. However, the Armbian guys have been doing great work and we started a [project](https://github.com/Project31/centos-pine64) (loosely based on work done by Uli Middelberg [UMidd]) that takes the Armbian UBoot and Kernel and inserts it into a Centos 7.4 distribution. We have ready to go images for you to download
 
-| Board  | Distribution |
-| -------|--------------|
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with Armbian-5.44 kernel](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44)
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with Armbian-5.44 kernel and Gnome Desktop](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44-gnome)|
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 with Armbian-5.44 kernel and Docker v1.13 and OpenShift v3.7.1](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) |
+| Board  | Direct Download |
+| -------|-----------------|
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44/centos74-armbian544-pine64.img.xz)
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44 and Gnome Desktop](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44-gnome/centos74-armbian544-desktop-pine64.img.xz)|
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 with kernel from Armbian-5.44 and Docker v1.13 and OpenShift v3.7.1](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) |
+| [Rock64Pro]() | [Centos 77.4.1708 with kernel from Armbian-5.67](https://github.com/Project31/centos-rock64pro/releases/download/centos-rock64pro/centos7-rock64pro.img.xz)|
+
 All Centos 7 have `centos` as the root pw, please change after installation!
 
 
