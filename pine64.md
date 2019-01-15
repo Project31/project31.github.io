@@ -11,9 +11,10 @@ images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately thes
 
 | Board  | Distribution |
 | -------|--------------|
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with Armbian-5.44 for Pine64](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44)
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 and Armbian-5.44 with Docker and OpenShift for Pine64](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) |
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 and Gnome Desktop with Armbian-5.44 for Pine64](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44-gnome)
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with Armbian-5.44 kernel](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44)
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with Armbian-5.44 kernel and Gnome Desktop](https://github.com/Project31/centos-pine64/releases/tag/v7.4.1708-v5.44-gnome)|
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 with Armbian-5.44 kernel and Docker v1.13 and OpenShift v3.7.1](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) |
+All Centos 7 have `centos` as the root pw, please change after installation!
 
 
 ![Pine64](https://cdn-images-1.medium.com/max/800/1*rzKvW06sxv6u-hblFgmEhw.jpeg)
