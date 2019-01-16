@@ -150,7 +150,36 @@ will mount as `/export/mnt/sdb2`. Make sure the `/export` directory mountpoint e
 
 ## 4.5 Docker and Kubernetes
 
-Look for the distros on the release page that have Docker and OpenShift. In those distros we added the experimental iPaaS repo, that contains RPMs for Ansible, Docker and OpenShift.
+Look for the distros on the release page that have Docker and OpenShift. In those distros we added the experimental iPaaS repo, that contains RPMs for Ansible, Docker and OpenShift. In those distros we add a `/etc/yum.repos.d/Centos-Origin.repo` file with the iPaaS Aarch64 repo. 
+
+~~~~
+[openshift]
+name=CentOS-$releasever - OpenShift Origin
+baseurl=https://cbs.centos.org/repos/paas$releasever-openshift-multiarch-candidate/$basearch/os/
+enabled=1
+gpgcheck=0
+~~~~
+
+and enabled it using 
+
+~~~~
+yum-config-manager --enable Centos-Origin
+~~~~
+
+so that now the `openshift/7/aarch64` repo should be listed:
+
+~~~~
+yum repolist
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+repo id                                                 repo name                                                        status
+base/7/aarch64                                          CentOS-7 - Base                                                  7,571
+extras/7/aarch64                                        CentOS-7 - Extras                                                  324
+openshift/7/aarch64                                     CentOS-7 - OpenShift Origin                                         74
+updates/7/aarch64                                       CentOS-7 - Updates                                                 520
+repolist: 8,489
+~~~~
+
 
 
 # 5. References
