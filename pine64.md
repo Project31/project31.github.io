@@ -9,13 +9,13 @@ permalink: /pine64/
 The Pine64 board should be able to run Aarch64/ARM64 images. The official Centos-7 supports these 
 images at <http://mirror.centos.org/altarch/7/isos/aarch64/>. Unfortunately these release don't run on my Pine64 just yet. However, the Armbian guys have been doing great work and we started a [project](https://github.com/Project31/centos-pine64) (loosely based on work done by Uli Middelberg [UMidd]) that takes the Armbian UBoot and Kernel and inserts it into a Centos 7.4 distribution. We have ready to go images for you to download
 
-| Releases for Board | Direct Download Link | Download Size |
-| -------|-----------------|------|
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44/centos74-armbian544-pine64.img.xz) | 496 MB |
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44 and Gnome Desktop.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44-gnome/centos74-armbian544-desktop-pine64.img.xz)| 1.64 GB|
-| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 with kernel from Armbian-5.44 and Docker v1.13 and OpenShift v3.7.1.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) | 803 MB|
-| [Rock64](https://github.com/Project31/centos-pine64/releases) | [Centos-7.4.1708 with kernel from Armbian-5.69.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.59/centos7-rock64.img.xz)| 570 MB|
-| [Rock64Pro](https://github.com/Project31/centos-pine64/releases) | [Centos-7.4.1708 with kernel from Armbian-5.67.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.56/centos7-rock64pro.img.xz)| 577 MB|
+| Releases for Board | Direct Download Link | Download Size | min. microSD|
+| -------|-----------------|------|------|
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44/centos74-armbian544-pine64.img.xz) | 496 MB | 8GB |
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.4.1708 with kernel from Armbian-5.44 and Gnome Desktop.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.44-gnome/centos74-armbian544-desktop-pine64.img.xz)| 1.64 GB| 8GB |
+| [Pine64](<https://github.com/Project31/centos-pine64/releases>) | [Centos-7.5.1804 with kernel from Armbian-5.44 and Docker v1.13 and OpenShift v3.7.1.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.5.1804-v5.44/centos75-armbian-openshift-pine64.img.xz) | 803 MB| 8GB |
+| [Rock64](https://github.com/Project31/centos-pine64/releases) | [Centos-7.4.1708 with kernel from Armbian-5.69.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.59/centos7-rock64.img.xz)| 570 MB| 8GB |
+| [Rock64Pro](https://github.com/Project31/centos-pine64/releases) | [Centos-7.4.1708 with kernel from Armbian-5.67.img.xz](https://github.com/Project31/centos-pine64/releases/download/v7.4.1708-v5.56/centos7-rock64pro.img.xz)| 577 MB| 8GB |
 
 All Centos 7 have `centos` as the root pw, please change after installation!
 
