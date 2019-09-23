@@ -45,7 +45,7 @@ Make sure to adjust the network setting you are expecting on your network. This 
 The initial size of the microSD card is 8 GB. To use the full size of your microSD card [StackX] you need to use
 
 ~~~~
-sudo fdisk /dev/mmcblk0
+sudo fdisk /dev/mmcblk0   (use option `-c=dos` if start sector is out of range)
 ~~~~
 
 and type ‘p’ to obtain the list of partitions.
